@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orrary - О приложении</title>
+    <link rel="stylesheet" href="about_web.css">
+</head>
+<style>
+    .footer-button {
+        margin-top: 1rem;
+        padding: 0.75rem 1.5rem;
+        background: #6b0ae2;
+        color: #1d2b64;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .footer-button:hover {
+        background: #f0b8d1;
+    }
+    .language-selector {
+        display: flex;
+        gap: 1rem;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 0.5rem 1rem;
+    }
+    .language-selector button {
+        background: transparent;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+    .language-selector button:hover {
+        color: #f8cdda;
+    }
+</style>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo" data-key="logo">Orrary</div>
+            <nav>
+                <ul>
+                    <li><a href="/home" data-key="navbar-home">На главную</a></li>
+                    <li><a href="/about_func" data-key="navbar-functions">Функции</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button id="lang-ru">Русский</button>
+                <button id="lang-kz">Казахский</button>
+                <button id="lang-en">Английский</button>
+            </div>
+            <a href="https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/create-an-orrery-web-app-that-displays-near-earth-objects/" class="button" data-key="learn-more">Узнать больше</a>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <h2 data-key="about-title">О приложении Orrary</h2>
+            <div class="about-content">
+                <p data-key="about-desc-1">С тех пор как в 1713 году Чарльзу Бойлу, 4-му графу Оррери, была представлена ​​механическая модель солнечной системы, такие модели стали называться планетариями. Первые планетарии были физическими моделями, но сегодня мы можем использовать многочисленные инструменты для создания виртуальных планетариев, которые имеют гораздо больше функций, чем их древние механические аналоги.</p>
+                <p data-key="about-desc-2">Orrary — это интерактивное веб-приложение планетарий, встроенное в веб-страницу и отображающее небесные тела, такие как планеты, околоземные астероиды, околоземные кометы и потенциально опасные астероиды.</p>
+                <h3 data-key="development-time">Время разработки</h3>
+                <div class="date-image">
+                    <img src="src/Images/5.png" alt="05.10.24 - 06.10.24" style="width: 100%; max-width: 800px; border-radius: 15px;">
+                </div>
+                <h3 data-key="team">Команда разработчиков</h3>
+                <div>
+                    <ul>
+                        <li data-key="team-member-1"><strong>Пинигин Артём</strong> — занимался дизайном сайта и писал весь Front-end для кейса на чистых HTML, CSS и JS.</li>
+                        <li data-key="team-member-2"><strong>Ефремов Иван</strong> — занимался написанием функции Кеплера и созданием 3D-рендера с помощью Three.js.</li>
+                        <li data-key="team-member-3"><strong>Разов Тимофей</strong> — сделал Back-end на Java Spring.</li>
+                    </ul>
+                    <img src="src/Images/7.png" alt="Команда" style="width: 100%; max-width: 800px; border-radius: 15px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <h1 data-key="footer-title">С уважением, команда ITshechka</h1>
+            <p data-key="footer-desc">Все фотографии, тексты и видеоматериалы принадлежат их владельцам и использованы для демонстрации. Пожалуйста, не используйте контент шаблона в коммерческих целях.</p>
+            <a href="/links" class="footer-button" data-key="footer-link">Данные и ссылки</a>
+        </div>
+    </footer>
+    <script src="about_web.js"></script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: white;
+}
+
+header, .features, .about, .discover, .reach {
+    background: inherit;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #003366; /* Цвет фона аналогичный тому, что на изображении */
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+canvas{
+    border-radius: 25px;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f8cdda; /* Цвет при наведении */
+}
+
+.language-selector {
+    display: flex;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+}
+
+.language-selector button {
+    background: transparent;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.language-selector button:hover {
+    color: #f8cdda; /* Цвет при наведении */
+}
+
+.button {
+    padding: 0.75rem 1.5rem;
+    background: white;
+    color: #003366;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-primary {
+    background: #f8cdda;
+    color: #1d2b64;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://media1.tenor.com/m/WkuQC7dwNa8AAAAd/space-wallpaper-stars-background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+#desc {
+    width: 700px;
+    height: 420px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.features {
+    background: inherit;
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.features-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #1d2b64;
+}
+
+.feature-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #1d2b64;
+}
+
+.about {
+    background: inherit;
+    color: #1d2b64;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.about-images {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.about-image-phone, .about-image-computer {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.discover {
+    background: inherit;
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.discover-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.discover-item {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #1d2b64;
+}
+
+.discover-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.discover-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.discover-item p {
+    font-size: 1rem;
+    color: #1d2b64;
+}
+
+.reach {
+    background: inherit;
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.reach-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.reach-button .button-primary {
+    background: #001f72;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-text {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.footer {
+    background: #1d3899;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-container a {
+    color: #f8cdda;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.footer-container p {
+    font-size: 1rem;
+}
+input[type="range"] {
+    -webkit-appearance: none !important; /* Убираем стандартный стиль ползунка */
+    width: 100%;
+    height: 15px;
+    background-color: rgb(96,127,165); /* Используем зелёный цвет */
+    border: 1px solid rgb(163,183,208); /* Утемненный зеленый цвет */
+    border-radius: 10px; /* Скругляем углы */
+    margin: auto;
+    transition: all 0.3s ease;
+}
+
+input[type="range"]:hover {
+    background-color: rgb(214,193,130); /* Осветляем зелёный цвет на 5% */
+}
+
+/* Thumb (ползунок) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(163,183,208); /* Тёмно-зелёный цвет */
+    border-radius: 30px; /* Скругляем углы */
+    box-shadow: 0px 0px 3px rgb(96,127,165); /* Тень для ползунка */
+    transition: all 0.5s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: rgb(40,61,108); /* Утемнённый цвет */
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    box-shadow: 0px 0px 1px rgb(7,23,74); /* Меняем тень при активном состоянии */
+}
+
+#range-style {
+    text-align: center;
+    font-family: 'Quantico', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    color: burlywood;
+}

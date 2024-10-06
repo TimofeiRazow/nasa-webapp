@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orrary - Небесный Спутник</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Orrary</div>
+            <nav>
+                <ul>
+                    <li><a href="/about_func">Функции</a></li>
+                    <li><a href="/about_app">О приложении</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button id="lang-ru">Русский</button>
+                <button id="lang-kz">Казахский</button>
+                <button id="lang-en">Английский</button>
+            </div>
+            <a href="https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/create-an-orrery-web-app-that-displays-near-earth-objects/" class="button">Узнать больше</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Orrary — около-земные объекты, угрозы для Земли и многое другое</h1>
+            <p>Исследуйте планеты, астероиды и кометы. Получайте информацию о потенциально опасных небесных телах.</p>
+        </div>
+        <div class="desc">
+            <!-- Ползунок для управления временем -->
+            <form onsubmit="return false">
+                <label for="range-style">Speed: </label>
+                <input type="range" id="range-style" min="-3" max="3" value="1" step="0.1" oninput="updateSpeed(this.value)">
+                <output id="speedValue">1</output>
+            </form>
+            <button onclick="updateSpeed(0)">Stop</button>
+
+        </div>
+        <div id="desc"></div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="features-container">
+            <h2>Преимущества Orrary</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <img src="src/Images/1.png" alt="3D модели" style="width: 100%; max-width: 500px; height: 300px;">
+                    <h3>Интерактивные 3D-модели</h3>
+                    <p>Погрузитесь в захватывающий мир космоса с помощью интерактивных 3D-моделей.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="/src/Images/2.png" alt="Высококачественные изображения" style="width: 100%; max-width: 500px; height: 300px;">
+                    <h3>Высококачественные изображения</h3>
+                    <p>Насладитесь потрясающими высококачественными изображениями небесных тел.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="/src/Images/3.png" alt="Подробная информация" style="width: 100%; max-width: 500px; height: 300px;">
+                    <h3>Подробная информация</h3>
+                    <p>Получите доступ к подробной информации о небесных телах, которая оживит Вселенную.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>Астрономия для всех</h2>
+            <p>Откройте тайны космоса с нашим приложением! Узнайте о небесных телах и последних открытиях в области астрономии на любом устройстве от компьютера до телефона.</p>
+            <div class="about-images">
+                <img src="/src/Images/4.png" alt="Изображение телефона и компьютера" class="about-image-phone">
+            </div>
+        </div>
+    </section>
+
+    <section class="discover" id="discover">
+        <div class="discover-container">
+            <h2>Откройте для себя Orrary</h2>
+            <div class="discover-grid">
+                <div class="discover-item">
+                    <h3>Функциональность</h3>
+                    <p>Отображение различных небесных тел: планет, астероидов и комет.</p>
+                </div>
+                <div class="discover-item">
+                    <h3>Потенциально опасные астероиды</h3>
+                    <p>Информация о потенциально опасных астероидах для любителей астрономии.</p>
+                </div>
+                <div class="discover-item">
+                    <h3>Звёздные отзывы</h3>
+                    <p>Впечатления пользователей, которые уже оценили приложение.</p>
+                </div>
+                <div class="discover-item">
+                    <h3>Простота использования</h3>
+                    <p>Удобный интерфейс для лёгкого доступа к информации о небесных телах.</p>
+                </div>
+                <div class="discover-item">
+                    <h3>Развитие интереса к астрономии</h3>
+                    <p>Возможность узнать больше о космосе и небесных объектах.</p>
+                </div>
+                <div class="discover-item">
+                    <h3>Образовательный потенциал</h3>
+                    <p>Приложение подходит как для развлечения, так и для обучения.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reach" id="reach">
+        <div class="reach-container">
+            <h2>Дотянитесь до звёзд</h2>
+            <p>Узнайте больше о небесных телах с помощью нашего приложения Orrary.</p>
+            <div class="reach-button">
+                <a href="#contact" class="button-primary">Связаться с нами</a>
+            </div>
+            <div class="social-links">
+                <a href="https://web.telegram.org/a/#5881029077"><img src="https://www.svgrepo.com/show/365791/telegram-logo-thin.svg" alt="Telegram" target="_blank"></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRspGqBDcpJDHgGCrVFxbbkLlXRmjTlwLcJFqCBZfbcFZNkfFDStXHdnLRdqFGRlnMbwxsG"><img src="https://cdn.iconscout.com/icon/free/png-256/free-gmail-logo-icon-download-in-svg-png-gif-file-formats--email-envelope-mail-social-media-icons-pack-logos-1524233.png?f=webp&w=256" alt="Gmail" target="_blank"></a>
+            </div>
+            <p class="footer-text">Мы стремимся сделать астрономию доступной для всех.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <h1>С уважением, команда ITshechka</h1>
+            <p>Все фотографии, тексты и видеоматериалы принадлежат их владельцам и использованы для демонстрации. Пожалуйста, не используйте контент шаблона в коммерческих целях.</p>
+            <a href="/links" class="footer-button">Данные и ссылки</a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
